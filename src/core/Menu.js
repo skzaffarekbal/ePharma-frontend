@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { signout, isAuthenticated } from "../auth/helper/index";
-import logo from "../tshirt_icon.png";
+import logo from "../ePharma.png";
 
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {

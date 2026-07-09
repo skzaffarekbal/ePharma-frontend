@@ -2,7 +2,7 @@ import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import { isAuthenticated } from "../auth/helper";
 import { API } from "../backend";
-import logo from "../tshirt_icon.png";
+import logo from "../ePharma.png";
 import { totalAmount } from "./helper/cartHelper";
 
 const paymentStripe = (
