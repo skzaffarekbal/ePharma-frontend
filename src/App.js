@@ -1,19 +1,24 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { removeTodo } from "./actions";
-import AddTodo from "./components/AddTodo/AddTodo";
-import TodoList from "./components/TodoList/TodoList";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const dispatch = useDispatch();
   return (
     <div className="App">
-      <h2 className="text-center my-3">⏳Stay Productive With Todo✌️</h2>
-      <AddTodo />
-      <TodoList />
-      <div className="d-grid gap-2 col-6 mx-auto my-3">
-        <button className="btn btn-danger" type="button" onClick={() => dispatch(removeTodo())}>Remove All <i className="fa fa-trash-alt"></i></button>
-      </div>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
